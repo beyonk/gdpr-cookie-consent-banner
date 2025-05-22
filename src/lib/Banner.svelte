@@ -129,7 +129,7 @@
     }
 
     try {
-      const { choices, fp } = JSON.parse(cookie)
+      const { choices, fp } = atob(JSON.parse(cookie))
       const valid = validate(cookieChoices, choices)
 
       if (!valid) {
@@ -158,7 +158,7 @@
       cookieContent.fp = uid(32)
     }
 
-    Cookies.set(cookieName, JSON.stringify(cookieContent), options)
+    Cookies.set(cookieName, btoa(JSON.stringify(cookieContent)), options)
   }
 
   function removeCookie () {
