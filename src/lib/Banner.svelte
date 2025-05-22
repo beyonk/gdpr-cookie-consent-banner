@@ -129,7 +129,7 @@
     }
 
     try {
-      const { choices, fp } = atob(JSON.parse(cookie))
+      const { choices, fp } = JSON.parse(atob(cookie))
       const valid = validate(cookieChoices, choices)
 
       if (!valid) {
