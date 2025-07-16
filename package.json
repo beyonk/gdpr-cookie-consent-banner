@@ -29,7 +29,8 @@
     },
     "./banner.css": {
       "import": "./src/lib/banner.css"
-    }
+    },
+    "./package.json": "./package.json"
   },
   "devDependencies": {
     "@beyonk/eslint-config": "^9.0.3",
