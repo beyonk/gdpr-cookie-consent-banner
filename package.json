@@ -54,9 +54,17 @@
     "vanilla",
     "beyonk"
   ],
-  "packageManager": "pnpm@10.7.0",
+  "packageManager": "pnpm@10.33.0",
   "dependencies": {
     "js-cookie": "^3.0.5",
     "uid": "1"
+  },
+  "repository": "https://github.com/beyonk/gdpr-cookie-consent-banner.git",
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "25.9.0",
+      "onFail": "error"
+    }
   }
 }
