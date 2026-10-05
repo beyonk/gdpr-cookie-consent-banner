@@ -39,7 +39,8 @@
     "eslint": "^9.23.0",
     "svelte": "^5.25.3",
     "vite": "^6.3.3",
-    "vitest": "^3.1.2"
+    "vitest": "^3.1.2",
+    "pkg-pr-new": "^0.0.88"
   },
   "type": "module",
   "keywords": [
@@ -54,7 +55,7 @@
     "vanilla",
     "beyonk"
   ],
-  "packageManager": "pnpm@11.0.0",
+  "packageManager": "pnpm@12.9.1",
   "dependencies": {
     "js-cookie": "^3.0.5",
     "uid": "1"
@@ -63,11 +64,11 @@
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "24.14.1",
-      "onFail": "error"
+      "version": "24",
+      "onFail": "download"
     }
   },
   "engines": {
-    "node": "24.14.1"
+    "node": "24"
   }
 }
