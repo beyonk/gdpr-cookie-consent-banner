@@ -1,0 +1,24 @@
+name: canary-libs
+
+on:
+  push:
+    branches:
+      - 'feature/by-*'
+
+jobs:
+  canary:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v7
+
+      - name: set up node and pnpm
+        run: |
+          corepack enable
+          pnpm i
+
+      - name: build
+        run: pnpm build
+
+      - name: publish canary
+        run: pnpm exec pkg-pr-new publish
