@@ -33,7 +33,7 @@
     "./package.json": "./package.json"
   },
   "devDependencies": {
-    "@beyonk/eslint-config": "^9.0.3",
+    "@beyonk/eslint-config": "^10.1.1",
     "@sveltejs/kit": "^2.20.7",
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
     "eslint": "^9.23.0",
