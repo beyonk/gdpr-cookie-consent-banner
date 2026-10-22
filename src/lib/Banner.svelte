@@ -148,12 +148,9 @@
   })
 
   function setCookie (choices) {
-    const expires = new Date()
-    expires.setDate(expires.getDate() + 400)
-
     const cookieContent = { choices }
 
-    const options = Object.assign({}, defaults, cookieConfig, { expires })
+    const options = Object.assign({}, defaults, cookieConfig, { expires: 400 })
     if (choices.analytics || choices.tracking) {
       cookieContent.fp = uid(32)
     }
